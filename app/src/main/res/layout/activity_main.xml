@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book"
+    tools:context="com.example.himani.cse_app.MainActivity">
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabhost"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintTop_toTopOf="@+id/activity_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/TEACHER"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center">
+
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:hint="Name"
+                        android:paddingLeft="10dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:id="@+id/t_name" />
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:layout_height="40dp"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:hint="Email Address"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/t_email"/>
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:inputType="textPassword"
+                        android:hint="Password"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="sans-serif"
+                        android:ems="10"
+                        android:id="@+id/t_pass" />
+
+                    />
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:layout_height="40dp"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:hint="Confirm Password"
+                        android:fontFamily="sans-serif"
+                        android:id="@+id/t_cpass" />
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext1"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:paddingLeft="10dp"
+                        android:hint="Department"
+                        android:id="@+id/t_dept"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Sign up"
+                        android:id="@+id/t_signup"
+                        android:gravity="center"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/STUDENT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center">
+
+
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:hint="Name"
+                        android:paddingLeft="10dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:id="@+id/s_name" />
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:layout_height="40dp"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:hint="Email Address"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/s_email"/>
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:inputType="textPassword"
+                        android:hint="Password"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="sans-serif"
+                        android:ems="10"
+                        android:id="@+id/s_pass" />
+
+                    />
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:layout_height="40dp"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:hint="Confirm Password"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="sans-serif"
+                        android:id="@+id/s_cpass" />
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:alpha="0.3"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edittext1"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:hint="Year"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/s_year" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/s_signup"
+                        android:text="Sign up"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>

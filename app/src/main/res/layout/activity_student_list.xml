@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/book"
+    android:id="@+id/activity_student_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="10dp"
+    tools:context="com.example.himani.cse_app.StudentList">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_list">
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/list_student"
+                android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
